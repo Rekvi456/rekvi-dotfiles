@@ -1,0 +1,8 @@
+
+// Environment configuration
+// Contains environment variables
+
+environment {
+
+}
+screenshot-path "~/Pictures/Screenshots/Niri/Screenshot from %Y-%m-%d %H-%M-%S.png"

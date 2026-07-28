@@ -1,0 +1,14 @@
+
+// Main configuration file
+// Includes other configuration files
+
+include "input.kdl"
+include "output.kdl"
+include "layout.kdl"
+include "appearance.kdl"
+include "animations.kdl"
+include "environment.kdl"
+include "startup.kdl"
+include "window-rules.kdl"
+include "layer-rules.kdl"
+include "binds.kdl"

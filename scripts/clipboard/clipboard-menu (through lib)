@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ -z "$REKVI_DOTFILES" ]]; then
+	echo "REKVI_DOTFILES is not set."
+	exit 1
+fi
+
+source "$REKVI_DOTFILES/scripts/lib/clipboard.sh"
+
+build_table
+
+selection="$(show_menu || true)"
+
+[[ -z "$selection" ]] && exit 0
+
+decode_entry "$selection"

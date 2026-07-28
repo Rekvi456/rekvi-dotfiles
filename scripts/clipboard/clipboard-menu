@@ -1,0 +1,81 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+format_entry() {
+	local id="$1"
+	local entry="$2"
+
+	local icon="📝"
+	local display="$entry"
+
+	#URL
+	if [[ $entry == ^http://* || $entry == ^https://* ]]; then
+		icon="🔗"
+
+		display="${entry#http://}"
+		display="${display#https://}"
+		display="${display#www.}"
+		display="${display%%/*}"
+	
+	#Path
+	elif [[ "$entry" = /* ]]; then
+		local filename="${entry##*/}"
+
+		#Directory
+		if [[ -d "$entry" ]]; then
+			icon="📁"
+			display="$filename"
+		
+		else
+			local parent="${entry%/*}"
+			parent="${parent##*/}"
+			
+			#Image
+			case "${filename##*.}" in
+				png|jpg|jpeg|gif|bmp|webp|svg|tif|tiff)
+					icon="🖼"
+					;;
+				*)
+					#Other file
+					icon="📄"
+					;;
+			esac
+
+			display="$parent/$filename"
+
+		fi
+
+	fi
+
+	printf "%s\t%s\t%s %s\n" \
+		"$id" \
+		"$entry" \
+		"$icon" \
+		"$display"
+}
+
+build_menu(){
+	while IFS=$'\t' read -r id value; do
+		format_entry "$id" "$value"
+	done < <(cliphist list) |
+	fuzzel \
+		--dmenu \
+		--prompt="📋Clipboard>" \
+		--with-nth=3
+}
+
+copy_selection() {
+	printf '%s\n' "$1" |
+		cut -f1-2 |
+		cliphist decode |
+		wl-copy
+}
+
+main() {
+	selection="$(build_menu)"
+	[[ -z "$selection" ]] && exit 0
+	copy_selection "$selection"
+}
+
+main
