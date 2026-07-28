@@ -6,18 +6,12 @@ This document contains the development progress. (It can be changed)
 
 # Stages
 
-- [1. Base system]
-(#1-base-system)
-- [2. Graphics and hardware]
-(#2-graphics-and-hardware)
-- [3. Wayland desktop]
-(#3-wayland-desktop)
-- [4. Package management]
-(#4-package-management)
-- [5. Clipboard]
-(#5-clipboard)
-- [6. Installation]
-(#6-installation)
+- [1. Base system](#1-base-system)
+- [2. Graphics and hardware](#2-graphics-and-hardware)
+- [3. Wayland desktop](#3-wayland-desktop)
+- [4. Package management](#4-package-management)
+- [5. Clipboard](#5-clipboard)
+- [6. Installation](#6-installation)
 
 ---
 
