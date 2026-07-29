@@ -82,6 +82,7 @@ This document contains the development progress. (It can be changed)
 - [x] Configure keyboard layouts
 - [ ] Keybindings
 - [ ] Window and layout rules
+- [x] Default dark theme for both QT and GTK
 - [ ] Customization (windows transparency, outline, etc)
 
 ### Terminal (Kitty)
@@ -92,6 +93,7 @@ This document contains the development progress. (It can be changed)
 ### Shell (Fish)
 
 - [x] Install fish
+- [x] Shell by default
 - [ ] Configure fish
 
 ### Launcher (Fuzzel)
@@ -141,6 +143,11 @@ This document contains the development progress. (It can be changed)
 - [x] Greetd and tuigreet installed
 - [x] Configure greetd
 - [ ] Configure tuigreet theme
+
+### Environment.d
+
+- [x] Add environment.d
+- [ ] Configure environment.d
 
 ---
 
