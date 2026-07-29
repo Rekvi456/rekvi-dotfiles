@@ -291,4 +291,5 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 
     Mod+Ctrl+V { spawn "clipboard-menu"; }
+    Menu { spawn "clipboard-menu"; }
 }
