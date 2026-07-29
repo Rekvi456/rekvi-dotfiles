@@ -1,22 +1,33 @@
 
 //Windows rules configuration
 
-// Enable rounded corners for all windows.
+// Window rule for all windows. At the moment it rounds the window corners
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }
 
-// This regular expression is intentionally made as specific as possible,
-// since this is the default config, and we want no false positives.
-// You can get away with just app-id="wezterm" if you want.
+//Firefox
+
+//Open the Firefox as maximized window by default
 window-rule {
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
+    match app-id="^firefox"
+    open-maximized true
 }
 
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
+
+    default-column-width {
+        fixed 480 
+    }
+
+    default-window-height {
+        fixed 270
+    }
+
+    default-floating-position x=32 y=32 relative-to="bottom-left"
 }
+
