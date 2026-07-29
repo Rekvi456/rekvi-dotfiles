@@ -19,7 +19,7 @@ I created a project to learn how to work with Linux. I'm a newcomer here myself,
 
 - **docs/** - project documentation.
     - 'packages.md' - packages currently used by the project.
-    - 'roadmap.md' - development roadmap
+    - 'roadmap.md' - development roadmap.
     - 'ideas.md' - ideas for future improvements.
 
 - **.config/** - configuration files
@@ -27,8 +27,8 @@ I created a project to learn how to work with Linux. I'm a newcomer here myself,
 - **scripts/** - utility scripts used by the system.
 
 - **install/** - installation scripts *(currently empty)*
-    - Configuration files can be deployed either through GNU Stow or the installation scripts.
-    - Packages can be installed through the installation script **or** manually.
+    - Configuration files can be deployed either through GNU Stow **or** the installation scripts.
+    - Packages can be installed through the installation script **or** manually (look 'packages.md').
     - **Helper scripts and additional utilities** are installed **only** through the installation scripts. You can try to install them manually, but it's not recommended.
 
 - **assets/** - wallpapers, images, icons and other static resources used by the system *(currently empty)*.
@@ -49,18 +49,15 @@ I created a project to learn how to work with Linux. I'm a newcomer here myself,
 ## Структура проекта
 
 - **docs/** - докуменация проекта.
-    - 'packages.md' - список программных пакетов, используемые в проекте на данный момент
+    - 'packages.md' - список программных пакетов, используемые в проекте на данный момент.
     - 'roadmap.md' - план развития проекта.
-    - 'ideas.md' - идеи для внедрения в проект *(но не включенные на данный момент в план)*
+    - 'ideas.md' - идеи для внедрения в проект *(но не включенные на данный момент в план)*.
 
 - **.config/** - конфигурации проекта.
 
 - **scripts/** - вспомогательные скрипты системы
-
-<<<<<<< HEAD
-- **install/** - скрипты установки *(на данный момент пуст)*
-=======
 - **install/** - скрипты установки *(пока отсутствуют)*
-- **assets** - используемые системой ресурсы: обои, изображения, иконки и другие статические файлы. *(на данный момент пуст)*
-=======
+    - Файлы конфигураций могут быть установлены через GNU Stow **или** через скрипт установки
+    - Пакеты могут быть установлены через скрипт установки **или** вручную (смотрите 'packages.md')
+    - **Вспомогательные скрипты и дополнительные утилиты** могут быть установлены через **скрипт установки**. Вы можете попробовать установить их вручную, но я не уверен что это сработает.
 - **assets** - используемые системой ресурсы: обои, изображения, иконки и другие статические файлы. *(пока отсутствуют)*
