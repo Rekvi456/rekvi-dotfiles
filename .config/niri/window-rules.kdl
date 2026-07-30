@@ -30,4 +30,5 @@ window-rule {
     match app-id="^firefox"
     exclude title="^(Picture-in-Picture|Картинка в картинке)$" 
     open-maximized true
+    open-on-workspace "browser"
 }
