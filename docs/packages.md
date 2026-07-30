@@ -18,7 +18,10 @@ There are 2 categories:
 - fish
 - cliphist
 - wl-clipboard
-- thunar
+- nautilus
+- xdg-desktop-portal
+- xdg-desktop-portal-gtk
+- xdg-desktop-portal-gnome
 - brightnessctl
 
 ---
