@@ -21,5 +21,14 @@ This document contains the ideas that have not yet been finalized but have a cha
 ## Customization
 
 - Live wallpaper support
-- CLI theme (unlikely)
+- CLI themed environment (unlikely)
 - General themes for system
+
+## Custom TUI Login Manager
+
+- Animated ASCII art on boot
+- Session selection
+- Time
+- Themes
+- Wayland-support
+- Random quotes upon logging in
