@@ -121,8 +121,10 @@ This document contains the development progress. (It can be changed)
 
 ### File management
 
-- [x] Install thunar (GUI file manager)
-- [ ] Configure Thunar
+- [x] ~~Install thunar (GUI file manager)~~
+- [ ] ~~Configure Thunar~~
+- [x] Install Nautilus
+- [ ] Configure Nautilus
 - [x] Install yazi (terminal file manager)
 - [ ] Configure yazi
 - [x] Install loupe (image viewer)
