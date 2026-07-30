@@ -1,6 +1,8 @@
 
 //Windows rules configuration
 
+workspace "browser"
+
 // Window rule for all windows. At the moment it rounds the window corners
 window-rule {
     geometry-corner-radius 12
@@ -11,7 +13,7 @@ window-rule {
 
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {
-    match app-id=r#"firefox$"# title="^(Picture-in-Picture|Картинка-в-картинке)$"
+    match app-id=r#"firefox$"# title=r#"(Picture-in-Picture|Картинка в картинке)$"#
     open-floating true
 
     default-column-width {
@@ -27,8 +29,8 @@ window-rule {
 
 //Open the Firefox as maximized window by default
 window-rule {
-    match app-id="^firefox"
-    exclude title="^(Picture-in-Picture|Картинка в картинке)$" 
+    match app-id=r#"firefox$"#
+    exclude title=r#"(Picture-in-Picture|Картинка в картинке)$"# 
     open-maximized true
     open-on-workspace "browser"
 }
