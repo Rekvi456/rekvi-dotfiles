@@ -32,3 +32,5 @@ This document contains the ideas that have not yet been finalized but have a cha
 - Themes
 - Wayland-support
 - Random quotes upon logging in
+
+## System cleaner (foremost for me)
